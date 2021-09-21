@@ -545,7 +545,17 @@
   }
   
   
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 421px) {
+    .header__right {
+      width: 35%;
+      text-align: center;
+    }
+    .header__right a {
+      margin-bottom: 5px;
+    }
+    .header__right a{
+      margin-right: 10px;
+    }
     /* Banner */
   
     #bannerCarousel {
