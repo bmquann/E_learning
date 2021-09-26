@@ -45,7 +45,7 @@
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-        <nav class="header__nav navbar navbar-expand-md container">
+        <nav class="header__nav navbar navbar-expand-md container ">
             <a class="navbar-brand text-center" href="#">
                 <p class="mb-0"><i class="fa fa-book"></i> E-LEARNING</p>
                 <p class="mb-0">EDUCATION</p>
@@ -57,17 +57,17 @@
             <div class="collapse navbar-collapse" id="navbarInstruction">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME</a> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html" target="_blank">HOME</a> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./class.html" target="_blank">MY CLASS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MY CLASS</a>
-                    </li>
+                        <a class="nav-link" href="./contact.html" target="_blank">CONTACT US</a>
+                    </li>        
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -139,19 +139,23 @@
             <p>Tìm kiếm giáo viên ngay </p>
         </div>
 
-        <nav class="navbar navbar-light bg-white">
-            <form class="form-inline">
-                <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
+        <section class="search">
+            <div class="container">
+                <div class="search-box">
+                    <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="Search" id="search" autocomplete="off">
+                    </form>
+                    <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+                     xml:space="preserve">
+                  <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+                  <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+                </svg>
+                    <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
                 </div>
-            </form>
-        </nav>
+        
+            </div>
+        </section>
 
 
         <div class="container-fluid gedf-wrapper">
@@ -765,6 +769,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="./js/main.js"></script>
 
     <!-- Count Up  JS  -->
     <script src="./js/jquery.countup.js"></script>
