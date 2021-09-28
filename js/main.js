@@ -19,6 +19,8 @@ $(document).ready(function(){
       $(".search-form").submit();
     });
 });
+
+
 // SIDEBAR
 
 let sidebar = document.querySelector(".sidebar");
