@@ -10,6 +10,9 @@
 a:hover {
     text-decoration: none;
 }
+.subject-class {
+    cursor: pointer;
+}
 .header__user {
     width: 40px;
     height:40px;
@@ -370,7 +373,8 @@ a:hover {
 .box-title {
     font-weight: 700;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 24px!important;
+    color: red;
 }
 .table {
     --bs-table-bg: transparent;
@@ -544,8 +548,18 @@ a:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
+.btn__status {
+    width: 150px;
+    height: 40px;
+    padding: 7px 0px!important;
+}
+.text-mute{
+    color: #8d9ea7!important;
+    /* text-align: right; */
+    font-size: 1rem;
+    margin-left: auto;
+    margin-top: 0;
+}
 
 @media screen and (max-width: 666.98px) {
     .sidebar {

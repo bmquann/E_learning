@@ -70,12 +70,74 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">CONTACT US</a>
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
+                            <!-- Dropdown header -->
+                            <div class="px-3 py-3">
+                                <h6 class="text-sm m-0">You have <strong class="text-primary">13</strong> notifications.
+                                </h6>
+                            </div>
+                            <!-- List group -->
+                            <div class="list-group list-group-flush">
+                                <a href="#!" class="list-group-item list-group-item-action">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+
+                                            <!-- Avatar -->
+                                            <img alt="Image placeholder" src="./img/test1.jpg"
+                                                class="avatar rounded-circle">
+                                        </div>
+                                        <div class="col .header__noti">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="mb-0 text-sm">John Snow</h4>
+                                                </div>
+                                                <div class="text-right text-muted">
+                                                    <small>2 hrs ago</small>
+                                                </div>
+                                            </div>
+                                            <p class="text-sm mb-0 header__notip">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#!" class="list-group-item list-group-item-action">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <!-- Avatar -->
+                                            <img alt="Image placeholder" src="./img/test1.jpg"
+                                                class="avatar rounded-circle">
+                                        </div>
+                                        <div class="col .header__noti">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h4 class="mb-0 text-sm">John Snow</h4>
+                                                </div>
+                                                <div class="text-right text-muted">
+                                                    <small>3 hrs ago</small>
+                                                </div>
+                                            </div>
+                                            <p class="header__notip text-sm mb-0">Update your homework.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- View all -->
+                            <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3 header__notiview">View
+                                all</a>
+                        </div>
+                    </li>
                     <li class="header__user">
-                        <a href="profile.html"><img src="./img/test3.jpg" alt="user" width="50" ></a>
+                        <a href="profile.html"><img src="./img/avata.jpg" alt="user" width="50"></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
     </header>
     <!-- MAIN  -->
     <div class="sidebar">
@@ -108,13 +170,6 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="fa fa-book"></i>
-                    <span class="links_name">My Subject</span>
-                </a>
-                <span class="tooltip">My Subject</span>
-            </li>
-            <li>
-                <a href="#">
                     <i class="fa fa-sign-out-alt"></i>
                     <span class="links_name">Log out</span>
                 </a>
@@ -133,14 +188,14 @@
                     </form>
                     <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111"
-                        style="enable-background:new 0 0 671 111;" xml:space="preserve">
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
+                        viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
                         <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
                         <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
                     </svg>
                     <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
                 </div>
-    
+
             </div>
             <div class="space"></div>
         </section>
@@ -148,71 +203,55 @@
             <div class="col-md-12 col-lg-12 col-sm-12">
                 <div class="white-box">
                     <div class="d-md-flex mb-3">
-                        <h3 class="box-title mb-0">Recent sales</h3>
+                        <h3 class="box-title text-danger mb-0">Danh sách các lớp học đã đăng kí</h3>
                     </div>
                     <div class="table-responsive">
                         <table class="table no-wrap">
                             <thead>
                                 <tr>
                                     <th class="border-top-0">#</th>
-                                    <th class="border-top-0">Name</th>
-                                    <th class="border-top-0">Teacher Name</th>
+                                    <th class="border-top-0">Tên lớp học</th>
+                                    <th class="border-top-0">Tên giáo viên</th>
                                     <th class="border-top-0">Status</th>
-                                    <th class="border-top-0">Date</th>
-                                    <th class="border-top-0">Price</th>
+                                    <th class="border-top-0">Ngày hết hạn</th>
+                                    <th class="border-top-0">Tiến độ<nav></nav></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                               
+                                <tr> 
                                     <td>1</td>
-                                    <td class="txt-oflo">English</td>
+                                    <td class="txt-oflo"><a href="subject.html">English</a></td>
                                     <td>Mr.A</td>
-                                    <td class="text-success">Accomplished</td>
+                                    <td><a href="#" class="btn btn-danger btn__status">Chưa hoàn thành</a></td>
                                     <td class="txt-oflo">1/1/2021</td>
-                                    <td><span class="text-success">$100</span></td>
+                                    <td><span class="text-warning">10 <span class="text-danger">/ 30</span></span></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td class="txt-oflo">English</td>
+                                    <td class="txt-oflo"><a href="subject.html">English</a></td>
                                     <td>Mr.A</td>
-                                    <td class="text-danger">Unaccomplished</td>
+                                    <td ><Hoàn href="#" class="btn btn-success btn__status">Hoàn thành</a></td>
                                     <td class="txt-oflo">1/1/2021</td>
-                                    <td><span class="text-success">$100</span></td>
+                                    <td><span class="text-warning">10 <span class="text-danger">/ 30</span></span></td>
                                 </tr>
-                                <tr>
+                                <tr> 
                                     <td>3</td>
-                                    <td class="txt-oflo">English</td>
+                                    <td class="txt-oflo"><a href="subject.html">English</a></td>
                                     <td>Mr.A</td>
-                                    <td class="text-success">Accomplished</td>
+                                    <td><a href="#" class="btn btn-danger btn__status">Chưa hoàn thành</a></td>
                                     <td class="txt-oflo">1/1/2021</td>
-                                    <td><span class="text-success">$100</span></td>
+                                    <td><span class="text-warning">10 <span class="text-danger">/ 30</span></span></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td class="txt-oflo">English</td>
+                                    <td class="txt-oflo"><a href="subject.html">English</a></td>
                                     <td>Mr.A</td>
-                                    <td class="text-success">Accomplished</td>
+                                    <td ><Hoàn href="#" class="btn btn-success btn__status">Hoàn thành</a></td>
                                     <td class="txt-oflo">1/1/2021</td>
-                                    <td><span class="text-success">$100</span></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td class="txt-oflo">English</td>
-                                    <td>Mr.A</td>
-                                    <td class="text-danger">Unaccomplished</td>
-                                    <td class="txt-oflo">1/1/2021</td>
-                                    <td><span class="text-success">$100</span></td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td class="txt-oflo">English</td>
-                                    <td>Mr.A</td>
-                                    <td class="text-success">Accomplished</td>
-                                    <td class="txt-oflo">1/1/2021</td>
-                                    <td><span class="text-success">$100</span></td>
+                                    <td><span class="text-warning">10 <span class="text-danger">/ 30</span></span></td>
                                 </tr>
 
-                               
                             </tbody>
                         </table>
                     </div>
@@ -220,191 +259,11 @@
             </div>
         </div>
         <!-- ============================================================== -->
-        <!-- Recent Comments -->
-        <!-- ============================================================== -->
-        <div class="row">
-            <!-- .col -->
-            <div class="col-md-12 col-lg-8 col-sm-12">
-                <div class="card white-box p-0">
-                    <div class="card-body">
-                        <h3 class="box-title mb-0">Notifications</h3>
-                    </div>
-                    <div class="comment-widgets">
-                        <!-- Comment Row -->
-                        <div class="d-flex flex-row comment-row p-3 mt-0">
-                            <div class="p-2"><img src="./img/test3.jpg" alt="user" width="50" class="rounded-circle"></div>
-                            <div class="comment-text  ps-md-3 w-100">
-                                <h5>Mrs.B</h5>
-                                <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
-                                <div class="comment-footer d-md-flex align-items-center">
-                                     <span class="badge">Pending</span>
-                                     
-                                    <div class="text-muted mt-2 ">April 14, 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Comment Row -->
-                        <div class="d-flex flex-row comment-row p-3 mt-0">
-                            <div class="p-2"><img src="./img/test3.jpg" alt="user" width="50" class="rounded-circle"></div>
-                            <div class="comment-text  ps-md-3 w-100">
-                                <h5>Mrs.B</h5>
-                                <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
-                                <div class="comment-footer d-md-flex align-items-center">
-                                     <span class="badge">Pending</span>
-                                     
-                                    <div class="text-muted mt-2 ">April 14, 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Comment Row -->
-                        <div class="d-flex flex-row comment-row p-3 mt-0">
-                            <div class="p-2"><img src="./img/test3.jpg" alt="user" width="50" class="rounded-circle"></div>
-                            <div class="comment-text  ps-md-3 w-100">
-                                <h5>Mrs.B</h5>
-                                <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
-                                <div class="comment-footer d-md-flex align-items-center">
-                                     <span class="badge">Pending</span>
-                                     
-                                    <div class="text-muted mt-2 ">April 14, 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Comment Row -->
-                        <div class="d-flex flex-row comment-row p-3 mt-0">
-                            <div class="p-2"><img src="./img/test3.jpg" alt="user" width="50" class="rounded-circle"></div>
-                            <div class="comment-text  ps-md-3 w-100">
-                                <h5>Mrs.B</h5>
-                                <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
-                                <div class="comment-footer d-md-flex align-items-center">
-                                     <span class="badge">Pending</span>
-                                     
-                                    <div class="text-muted mt-2 ">April 14, 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="card white-box p-0">
-                    <div class="card-heading">
-                        <h3 class="box-title mb-0 card-body">Chat Listing</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="chatonline">
-                            <li>
-                                <div class="call-chat">
-                                    <button class="btn btn-success text-white btn-circle btn" type="button">
-                                        <i class="fas fa-phone"></i>
-                                    </button>
-                                    <button class="btn btn-info btn-circle btn" type="button">
-                                        <i class="far fa-comments text-white"></i>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                        src="./img/test1.jpg" alt="user-img" class="img-circle">
-                                    <div class="ms-2">
-                                        <span class="text-dark">Varun Dhavan <small
-                                                class="d-block text-success d-block">online</small></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="call-chat">
-                                    <button class="btn btn-success text-white btn-circle btn" type="button">
-                                        <i class="fas fa-phone"></i>
-                                    </button>
-                                    <button class="btn btn-info btn-circle btn" type="button">
-                                        <i class="far fa-comments text-white"></i>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                        src="./img/test1.jpg" alt="user-img" class="img-circle">
-                                    <div class="ms-2">
-                                        <span class="text-dark">Genelia
-                                            Deshmukh <small class="d-block text-warning">Away</small></span>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <div class="call-chat">
-                                    <button class="btn btn-success text-white btn-circle btn" type="button">
-                                        <i class="fas fa-phone"></i>
-                                    </button>
-                                    <button class="btn btn-info btn-circle btn" type="button">
-                                        <i class="far fa-comments text-white"></i>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                        src="./img/test1.jpg" alt="user-img" class="img-circle">
-                                    <div class="ms-2">
-                                        <span class="text-dark">Arijit
-                                            Sinh <small class="d-block text-muted">Offline</small></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="call-chat">
-                                    <button class="btn btn-success text-white btn-circle btn" type="button">
-                                        <i class="fas fa-phone"></i>
-                                    </button>
-                                    <button class="btn btn-info btn-circle btn" type="button">
-                                        <i class="far fa-comments text-white"></i>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                        src="./img/test1.jpg" alt="user-img" class="img-circle">
-                                    <div class="ms-2">
-                                        <span class="text-dark">Arijit
-                                            Sinh <small class="d-block text-muted">Offline</small></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="call-chat">
-                                    <button class="btn btn-success text-white btn-circle btn" type="button">
-                                        <i class="fas fa-phone"></i>
-                                    </button>
-                                    <button class="btn btn-info btn-circle btn" type="button">
-                                        <i class="far fa-comments text-white"></i>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                        src="./img/test1.jpg" alt="user-img"
-                                        class="img-circle">
-                                    <div class="ms-2">
-                                        <span class="text-dark">Govinda
-                                            Star <small class="d-block text-success">online</small></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="call-chat">
-                                    <button class="btn btn-success text-white btn-circle btn" type="button">
-                                        <i class="fas fa-phone"></i>
-                                    </button>
-                                    <button class="btn btn-info btn-circle btn" type="button">
-                                        <i class="far fa-comments text-white"></i>
-                                    </button>
-                                </div>
-                                <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                        src="./img/test1.jpg" alt="user-img" class="img-circle">
-                                    <div class="ms-2">
-                                        <span class="text-dark">John
-                                            Abraham<small class="d-block text-success">online</small></span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
-    </section>
-   
 
-   
+    </section>
+
+
+
 
 
 

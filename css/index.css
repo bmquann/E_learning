@@ -322,6 +322,10 @@
   }
   
   /* POST  */
+  
+.post__subject{
+  background: 	#FF00FF;
+}
 .form-inline{
   width: 35%;
   margin: 5px auto;
@@ -348,11 +352,12 @@
   color: #12ccc3;
 }
 .post__button  button{
+  font-weight: bold;
   margin-top: 10px;
   padding: 11px 15px;
   color: black;
   border: 1px solid black;
-  border-radius: 0;
+  border-radius: 12px;
   letter-spacing: 2px;
   font-size: 14px;
   transition: all 0.5s;
@@ -627,7 +632,9 @@
     text-decoration: none;
     color: #ff4f81;
   }
-  
+  .card-title {
+    color: #08c;
+  }
   /********************* RESPONSIVE ************************/
   
   @media screen and (max-width: 1199.98px) {
